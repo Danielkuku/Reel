@@ -158,11 +158,11 @@
     transform: translate(-50%, -50%);
     opacity: 1;
     transition: opacity 0.8s ease;
-    font-size: 30px;
+    font-size: 25px;
     color: white;
     background-color: black;
     border-radius: 50%;
-    padding: 8px 8px;
+    padding: 4px 4px;
   }
 
   #movieLink:hover #movieImg {
