@@ -201,4 +201,7 @@
   .para {
     margin-top: 10px;
   }
+  footer.section {
+    margin-top: 30px;
+  }
 }

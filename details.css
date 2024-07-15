@@ -1,0 +1,175 @@
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+} */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "spartan", sans-serif;
+}
+
+.container {
+  width: 100%;
+}
+.container .movie-details {
+  width: 100%;
+}
+.container .movie-details #movieImg {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  transition: filter 0.8s ease;
+}
+.container .movie-details .name-p {
+  margin-top: 10px;
+}
+.container .movie-details .label {
+  font-size: 20px;
+}
+.container .movie-details .name {
+  margin-top: 40px;
+}
+.label1 {
+  font-size: 15px;
+  color: #d6d6c2;
+}
+
+#movieLink {
+  position: relative;
+  /* display: inline-block; */
+}
+
+/* #movieImg {
+  display: flex;
+  width: 100%;
+  height: auto; 
+  transition: filter 0.3s ease;
+} */
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  font-size: 30px;
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+  padding: 8px 8px;
+}
+
+#movieLink:hover #movieImg {
+  filter: blur(3px);
+}
+
+#movieLink:hover .play-icon {
+  opacity: 1;
+}
+
+/* Media query for screen size max-width: 1280px */
+@media only screen and (max-width: 1280px) {
+  .container {
+    /* Adjustments for screen size up to 1280px */
+    width: 100%;
+  }
+
+  .container .movie-details {
+    width: 100%;
+  }
+
+  .container .movie-details #movieImg {
+    width: 80%; /* Example adjustment */
+    height: 400px; /* Example adjustment */
+  }
+  .container .movie-details .name-p {
+    margin-top: 8px; /* Example adjustment */
+  }
+
+  .container .movie-details .label {
+    font-size: 18px; /* Example adjustment */
+  }
+
+  .container .movie-details .name {
+    margin-top: 35px; /* Example adjustment */
+  }
+
+  .label1 {
+    font-size: 14px; /* Example adjustment */
+  }
+}
+
+/* Media query for screen size max-width: 850px */
+@media only screen and (max-width: 850px) {
+  .container {
+    /* Adjustments for screen size up to 850px */
+    width: 100%;
+  }
+
+  .container .movie-details {
+    width: 100%;
+  }
+
+  .container .movie-details #movieImg {
+    width: 100%; /* Example adjustment */
+    height: 300px; /* Example adjustment */
+  }
+
+  .container .movie-details .name-p {
+    margin-top: 6px; /* Example adjustment */
+  }
+
+  .container .movie-details .label {
+    font-size: 16px; /* Example adjustment */
+  }
+
+  .container .movie-details .name {
+    margin-top: 30px; /* Example adjustment */
+  }
+
+  .label1 {
+    font-size: 13px; /* Example adjustment */
+  }
+  #movieLink {
+    position: relative;
+    /* display: inline-block; */
+  }
+
+  /* #movieImg {
+    display: flex;
+    width: 100%;
+    height: auto; 
+    transition: filter 0.3s ease;
+  } */
+
+  .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: opacity 0.8s ease;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    padding: 8px 8px;
+  }
+
+  #movieLink:hover #movieImg {
+    filter: none;
+  }
+
+  /* #movieLink:hover .play-icon {
+    opacity: 1;
+  } */
+}
