@@ -63,9 +63,9 @@
   transition: opacity 0.8s ease;
   font-size: 25px;
   color: white;
-  background-color: red;
+  background-color: black;
   border-radius: 50%;
-  padding: 8px 20px;
+  padding: 8px 18px;
 }
 
 #movieLink:hover #movieImg {
